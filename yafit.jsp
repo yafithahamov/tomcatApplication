@@ -1,18 +1,17 @@
+<%@ page import="java.util.Date" %>
+<!DOCTYPE html>
 <html>
-<head><title>First JSP</title></head>
-<body>
-  <%
-    double num = Math.random();
-    if (num > 0.95) {
-  %>
-      <h2>You are exellnt student!</h2><p>(<%= num %>)</p>
-  <%
-    } else {
-  %>
-      <h2>You need do work hard ... </h2><p>(<%= num %>)</p>
-  <%
-    }
-  %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
-</body>
+	<head>
+		<title>My Web App</title>
+	</head>
+	<body>
+		<h1>My Web App</h1> 
+
+		<h2>here is the change<h2>
+		<h2> from my original computer </h2>
+         <h2> from my original computer </h2> 
+		 
+		 
+		<p>The current time is: <%= new Date().toString() %></p>
+	</body>
 </html>
